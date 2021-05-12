@@ -4,7 +4,7 @@
 
 ## Description
 
-fa
+This project is a readme file generator, making writing as easy as following prompts!
 
 ## Table of Contents
 
@@ -18,16 +18,16 @@ fa
 ## Installation Instructions
 
 ```
-asdf
+No installation needed, just node, vscode and some coding skills!
 ```
 
 ## Usage
 
-afasd
+This application takes the guesswork out of writing a professional read me file, by using pre written prompts you will not miss a step of the process
 
 ## Credits 
 
-fafa
+Inquirer.js 
 
 ## 
 
@@ -37,16 +37,16 @@ MIT
 
 ## Features 
 
-asdf
+While going through the prompts, as you answer, all input will be stored in the readme file once completed
 
 ## Tests
 
-adsf
+Consistently checking my questions and files to make sure they were providing the information that was desired
 
 ## Lets Connect
 
 Want to connect?
 
-Email: asdf
-Github: [fah](https://github.com/fahfah/)
+Email: Nstrong92@yahoo.com
+Github: [strong-one](https://github.com/strong-onestrong-one/)
 
