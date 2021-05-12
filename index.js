@@ -1,21 +1,30 @@
 // TODO: Include packages needed for this application
 const inquirer = require("inquirer");
+const fs = require("fs");
+const path = require("path");
+const generateMarkdown = require("./utils/generateMarkdown");
 
 // TODO: Create an array of questions for user input
 const questions = [
   "What is your project title?",
-  "Please describe your project",
-  "Please list table of contents (optional)",
+  "Provide a short description explaining the what, why, and how of your project.",
+  "List table of contents",
   "How do you install this application?",
   "What is the applications usage?",
   "Did you use any outside sources you would like to credit?",
-  "Any licenseing?",
+  "Any licenceing?",
   "What features does your application have?",
   "What tests were run during this applications creation?",
+  "Want to include your email?",
 ];
 
 inquirer
   .prompt([
+    {
+      name: "github",
+      type: "input",
+      message: "What is your github name?",
+    },
     {
       name: "projectName",
       type: "input",
@@ -48,8 +57,9 @@ inquirer
     },
     {
       name: "licensing",
-      type: "input",
+      type: "list",
       message: "Any licenseing?",
+      choices: ["MIT", "APACHE 2.0", "GPL 3.0", "BSD 3"],
     },
     {
       name: "features",
@@ -61,18 +71,31 @@ inquirer
       type: "input",
       message: "What tests were run during this applications creation?",
     },
+    {
+      name: "email",
+      type: "input",
+      message: "Want to include your email?",
+    },
   ])
   .then((response) => {
     console.log(response);
+
+    //const data = generateMarkdown(response); //large string
+
+    // method built in node that writes to a file, contains 2 arguments one saying where to write the file and the other to show what data will be displayed in that file.
+    fs.writeFileSync(
+      path.join(__dirname, "README.md"),
+      generateMarkdown(response)
+    );
   });
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-  const fs = require("fs");
-}
+// // TODO: Create a function to write README file
+// function writeToFile(fileName, data) {
 
-// TODO: Create a function to initialize app
-function init() {}
+// }
 
-// Function call to initialize app
-init();
+// // TODO: Create a function to initialize app
+// function init() {}
+
+// // Function call to initialize app
+// init();
