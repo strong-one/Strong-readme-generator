@@ -16,8 +16,8 @@ const { default: axios } = require("axios");
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   //axios.get(`https://api.github.com/users/${data.github}`).then((res) => {
-  return `# ${data.title}
-![GitHub License](https://img.shields.io/badge/license-${data.licensing}-blue.svg);
+  return `# Professional Readme Generator
+![GitHub License](https://img.shields.io/badge/license-${data.licensing}-blue.svg)
 
 
 ## Description
@@ -26,12 +26,14 @@ ${data.Description}
 
 ## Table of Contents
 
-* Installation
-* Usage
-* Credits
-* License
-* Features
-* Tests
+* [Installation](#installation)
+* [Usage](#usage)
+* [Credits](#Credits)
+* [License](#license)
+* [Features](#features)
+* [Tests](#tests)
+* [Let's Connect](#letsconnect)
+${data.tableOfContents}
 
 ## Installation Instructions
 
@@ -69,7 +71,7 @@ Email: ${data.email}
 Github: [${data.github}](https://github.com/${data.github}${data.github}/)
 
 `;
-  //  });
 }
 
+// is a variable that represents the current file, and exports is an object that will be exposed as a file. So, whatever you assign to module.exports will be exposed as a file.
 module.exports = generateMarkdown;

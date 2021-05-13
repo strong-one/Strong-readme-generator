@@ -1,7 +1,10 @@
 // TODO: Include packages needed for this application
 const inquirer = require("inquirer");
+// require file system to read files associated with the app
 const fs = require("fs");
+// access and interact with file system (fs)
 const path = require("path");
+// links to markdown js file
 const generateMarkdown = require("./utils/generateMarkdown");
 
 // TODO: Create an array of questions for user input
