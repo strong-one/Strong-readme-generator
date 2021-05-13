@@ -29,7 +29,7 @@ ${data.Description}
 * [Installation](#installation)
 * [Usage](#usage)
 * [Credits](#Credits)
-* [License](#license)
+* [License](#licensing)
 * [Features](#features)
 * [Tests](#tests)
 * [Let's Connect](#letsconnect)
@@ -65,7 +65,6 @@ ${data.tests}
 
 ## Lets Connect
 
-Want to connect?
 
 Email: ${data.email}
 Github: [${data.github}](https://github.com/${data.github}${data.github}/)

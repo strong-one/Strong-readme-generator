@@ -62,7 +62,7 @@ inquirer
       name: "licensing",
       type: "list",
       message: "Any licenseing?",
-      choices: ["MIT", "APACHE 2.0", "GPL 3.0", "BSD 3"],
+      choices: ["MIT", "APACHE2.0", "GPL3.0", "BSD3"],
     },
     {
       name: "features",

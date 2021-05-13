@@ -1,5 +1,5 @@
 # Professional Readme Generator
-![GitHub License](https://img.shields.io/badge/license-APACHE 2.0-blue.svg);
+![GitHub License](https://img.shields.io/badge/license-APACHE2.0-blue.svg)
 
 
 ## Description
@@ -11,7 +11,7 @@ This project is a readme file generator, making writing as easy as following pro
 * [Installation](#installation)
 * [Usage](#usage)
 * [Credits](#Credits)
-* [License](#license)
+* [License](#licensing)
 * [Features](#features)
 * [Tests](#tests)
 * [Let's Connect](#letsconnect)
@@ -35,11 +35,11 @@ Inquirer.js
 
 ## Licensing 
 
-APACHE 2.0
+APACHE2.0
 
 ## Features 
 
-
+While going through the prompts, as you answer, all input will be stored in the readme file once completed
 
 ## Tests
 
@@ -47,7 +47,6 @@ Consistently checking my questions and files to make sure they were providing th
 
 ## Lets Connect
 
-Want to connect?
 
 Email: Nstrong92@yahoo.com
 Github: [https://github.com/strong-one](https://github.com/https://github.com/strong-onehttps://github.com/strong-one/)
